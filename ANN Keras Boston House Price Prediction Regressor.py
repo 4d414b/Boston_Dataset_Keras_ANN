@@ -1,9 +1,5 @@
-# This Python 3 environment comes with many helpful analytics libraries installed
-# It is defined by the kaggle/python docker image: https://github.com/kaggle/docker-python
-# For example, here's several helpful packages to load in 
-
-import numpy as np # linear algebra
-import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
+import numpy as np 
+import pandas as pd 
 import matplotlib.pyplot as plt
 
 from keras.datasets import boston_housing
@@ -25,9 +21,7 @@ train_data /= std
 test_data -= mean
 test_data /= std
 
-# Note that the quantities used for normalizing the test data are computed using the
-# training data. You should never use in your workflow any quantity computed on the
-# test data, even for something as simple as data normalization.
+
 
 from keras import models
 from keras import layers
